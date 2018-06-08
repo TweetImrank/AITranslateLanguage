@@ -1,3 +1,4 @@
+/*
 codeunit 50150 "AI Language Events Subscriber"
 {
     EventSubscriberInstance = StaticAutomatic;
@@ -19,3 +20,4 @@ codeunit 50150 "AI Language Events Subscriber"
     var Language: Record Language;
         
 }
+*/

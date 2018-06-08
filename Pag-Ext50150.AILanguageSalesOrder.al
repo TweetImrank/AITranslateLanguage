@@ -20,6 +20,8 @@ pageextension 50150 "AI Language Sales Order" extends "Sales Order"
         ToolTip = 'Translate';
         Promoted = true;
         PromotedIsBig = true;
+        Image = Language;
+        
         trigger OnAction()
         
         begin

@@ -4,6 +4,7 @@ page 50151 "AI Translator Service Setup"
     PageType = Card;
     SourceTable = "AI Translator Service Setup";
     Caption = 'AI Translator Service Setup Card';
+    UsageCategory = Administration;
     
     layout
     {
@@ -31,11 +32,19 @@ page 50151 "AI Translator Service Setup"
                 Caption = 'AI Supported Language';
                 Promoted = true;
                 PromotedCategory = Process;
+                PromotedIsBig = true;
                 Image = Language;
 
             }
         }
-    }       
+    }      
+    
+    trigger OnOpenPage();
+    var
+    begin
+        InsertIfNotExists();
+    end;
+ 
 
 }
 
